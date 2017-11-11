@@ -35,6 +35,8 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'devise'
 gem 'figaro'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -16,4 +16,11 @@
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
+
+<div id="comments">
+
+    <%= render 'comments/form', comment: @comment %>
+
+</div>
+
 <%= link_to 'Back', posts_path %>
