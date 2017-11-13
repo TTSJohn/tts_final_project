@@ -19,8 +19,11 @@
       <li><a href="information">Information</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><% if user_signed_in? %>
+        <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn" %> 
+      <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn" %></li>
+      <% end %>
+      </li>
     </ul>
     
   </div>

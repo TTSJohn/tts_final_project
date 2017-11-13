@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'home' => 'stadium#index'
 
-  get 'blog' => 'stadium#blog'
+  get 'blog' => 'posts#index'
 
   get 'players' => 'stadium#players'
 
